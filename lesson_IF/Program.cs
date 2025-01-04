@@ -65,4 +65,16 @@ switch (number)
 
         Console.WriteLine("Число в диапазоне от 0 до 14");
         break;
+    case int n when (number >= 15 && number <= 35):
+        Console.WriteLine("Число в диапазоне от 15 до 35");
+        break;
+    case int n when (number >= 36 && number <= 50):
+        Console.WriteLine("Число в диапазоне от 36 до 50");
+        break;
+    case int n when (number >= 50 && number <= 100):
+        Console.WriteLine("Число в диапазоне от 50 до 100");
+        break;
+    default:
+        Console.WriteLine("Число не входит ни в один из диапазонов");
+        break;
 }
